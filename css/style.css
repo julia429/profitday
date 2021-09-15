@@ -1,0 +1,10 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*background-color: red;*/
+}
+
+.access-form .wpe_passwordless_auth_form .wpe_passwordless_auth_field .button, .button--sunset-white {
+	background-color: #f07c00;
+}
