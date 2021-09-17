@@ -8,3 +8,71 @@ body {
 .access-form .wpe_passwordless_auth_form .wpe_passwordless_auth_field .button, .button--sunset-white {
 	background-color: #f07c00;
 }
+
+#event {
+	width: 100%;
+	height: 300px;
+	box-shadow: 2px 2px 2px;
+	-webkit-box-shadow: 1px 1px 10px 6px #ff6c29; 
+	box-shadow: 1px 1px 20px 6px #ccc;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+}
+
+#flexwrap {
+	display: flex;
+	justify-content: space-around;
+}
+
+#wrap-columns {
+	display: flex;
+}
+
+
+
+#flexwrapp {
+	display: flex;
+	justify-content: space-between;
+}
+
+thead {
+	background: linear-gradient(180deg
+,rgba(0,40,56,.8) 0,rgba(0,40,56,0));
+	height: 55px;
+}
+
+.time {
+	width: 25%;
+/*	vertical-align: middle;*/
+/*	display: flex;
+	align-items: center;
+	justify-content: center;*/
+}
+
+.theme,
+.speker {
+	font-size: 14px;
+}
+
+#main-bg {
+	background-image: url("../img/bg-image.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#contacts-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
+
