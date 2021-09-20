@@ -38,11 +38,6 @@ body {
 	justify-content: space-between;
 }
 
-thead {
-	background: linear-gradient(180deg
-,rgba(0,40,56,.8) 0,rgba(0,40,56,0));
-	height: 55px;
-}
 
 .time {
 	width: 25%;
@@ -74,7 +69,8 @@ ul>li:before {
 }
 
 .nav-item {
-	width: 33%;
+	width: 30%;
+	margin-right: 10px;
 }
  #home-tab,
  #profile-tab,
@@ -100,6 +96,92 @@ ul>li:before {
 	width: 30%;
 }
 
+#myTab {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	border-top: 7px solid #f07c00;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0px;
+	box-shadow: none; 
+}
+
+.tab-content>.active {
+	background: #fff;
+	padding: 15px;
+	border-radius: 3px;
+	-webkit-box-shadow: -1px 9px 15px -6px lightgray; 
+	box-shadow: -1px 9px 15px -6px lightgray;
+	width: 100%;
+}
+
+.nav-tabs .nav-link {
+	background: #f07c00;
+	color: #fff;
+}
+
+#fl-col {
+	width: 100%;
+}
+
+.contacts-wrap {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.mail,
+.phone {
+	color: #002838;
+}
+
+.dropdown-nav.mobile .nav__block {
+	flex-direction: column;
+	height: auto !important;
+}
+
+.background--nightwolf, .nav__block {
+	background: #f8f9fa !important;
+}
+
+.nav__link--block {
+	flex: 0 0 0 !important;
+}
+
+.site-header.mobile-nav-active .dropdown-nav.mobile:before {
+	background-color: #f07c00 !important;
+}
+
+.nav__link--block .nav__title {
+	color: #002838;
+}
+
+.nav__link--block {
+	border-bottom: 1px solid #002838 !important;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+	#wrap-columns {
+		flex-direction: column;
+	}
+
+	.contacts-wrap {
+		flex-direction: column;
+	}
+	#flexwrap {
+		flex-direction: column;
+	}
+
+	.width-30,
+	.fl-col {
+		width: 100% !important;
+	}
+}
 
 
 
