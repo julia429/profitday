@@ -8,3 +8,183 @@ body {
 .access-form .wpe_passwordless_auth_form .wpe_passwordless_auth_field .button, .button--sunset-white {
 	background-color: #f07c00;
 }
+
+#event {
+	width: 100%;
+	height: 300px;
+	box-shadow: 2px 2px 2px;
+	-webkit-box-shadow: 1px 1px 10px 6px #ff6c29; 
+	box-shadow: 1px 1px 20px 6px #ccc;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+}
+
+#flexwrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+#wrap-columns {
+	display: flex;
+}
+
+
+
+#flexwrapp {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.time {
+	width: 25%;
+/*	vertical-align: middle;*/
+/*	display: flex;
+	align-items: center;
+	justify-content: center;*/
+}
+
+.theme,
+.speker {
+	font-size: 14px;
+}
+
+#main-bg {
+	background-image: url("../img/bgimage.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#contacts-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+ul>li:before {
+	width: 0 !important;
+}
+
+.nav-item {
+	width: 30%;
+	margin-right: 10px;
+}
+ #home-tab,
+ #profile-tab,
+ #contact-tab {
+ 	width: 100%;
+ }
+
+#btn-register {
+	background-color: #f07c00;
+
+}
+
+#btn-register:hover {
+	background-color: #fff;
+}
+
+.nav__link.nav__top:hover {
+	text-decoration: none;
+	border-color: #f07c00 !important;
+}
+
+.width-30 {
+	width: 30%;
+}
+
+#myTab {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	border-top: 7px solid #f07c00;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0px;
+	box-shadow: none; 
+}
+
+.tab-content>.active {
+	background: #fff;
+	padding: 15px;
+	border-radius: 3px;
+	-webkit-box-shadow: -1px 9px 15px -6px lightgray; 
+	box-shadow: -1px 9px 15px -6px lightgray;
+	width: 100%;
+}
+
+.nav-tabs .nav-link {
+	background: #f07c00;
+	color: #fff;
+}
+
+#fl-col {
+	width: 100%;
+}
+
+.contacts-wrap {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.mail,
+.phone {
+	color: #002838;
+}
+
+.dropdown-nav.mobile .nav__block {
+	flex-direction: column;
+	height: auto !important;
+}
+
+.background--nightwolf, .nav__block {
+	background: #f8f9fa !important;
+}
+
+.nav__link--block {
+	flex: 0 0 0 !important;
+}
+
+.site-header.mobile-nav-active .dropdown-nav.mobile:before {
+	background-color: #f07c00 !important;
+}
+
+.nav__link--block .nav__title {
+	color: #002838;
+}
+
+.nav__link--block {
+	border-bottom: 1px solid #002838 !important;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+	#wrap-columns {
+		flex-direction: column;
+	}
+
+	.contacts-wrap {
+		flex-direction: column;
+	}
+	#flexwrap {
+		flex-direction: column;
+	}
+
+	.width-30,
+	.fl-col {
+		width: 100% !important;
+	}
+}
+
+
+
+
+
+
