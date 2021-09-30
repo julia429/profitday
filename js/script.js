@@ -34,7 +34,7 @@ function fireEntrantModalCamp(event) {
 }
 function addHackers(){
 	const modalHeader = getElement('.modal-header-top-line');
-	modalHeader.innerHTML = "<h1>Анкета для Абітурієнта на навчання в Школі Хакерів</h1>";
+	modalHeader.innerHTML = "<h1>Реєстрація на Profit Day</h1>";
 	if(!(getElement('#specialization'))){
 		const modalForm = getElement('#entrant_form');
 		let specInput = document.createElement('input');
@@ -49,23 +49,23 @@ function addHackers(){
 		specInput.setAttribute('value', 8);
 	}
 }
-function addCamp(){
-	const modalHeader = getElement('.modal-header-top-line');
-	modalHeader.innerHTML = "<h1>Анкета в ІТ-табір</h1>";
-	if(!(getElement('#specialization'))){
-		const modalForm = getElement('#entrant_form');
-		let specInput = document.createElement('input');
-		specInput.setAttribute('type', 'hidden');
-		specInput.setAttribute('id', 'specialization');
-		specInput.setAttribute('name', 'specializations_9');
-		specInput.setAttribute('value', 9);
-		modalForm.appendChild(specInput);
-	}else{
-		let specInput = getElement('#specialization');
-		specInput.setAttribute('name', 'specializations_9');
-		specInput.setAttribute('value', 9);
-	}	
-}
+// function addCamp(){
+// 	const modalHeader = getElement('.modal-header-top-line');
+// 	modalHeader.innerHTML = "<h1>Анкета в ІТ-табір</h1>";
+// 	if(!(getElement('#specialization'))){
+// 		const modalForm = getElement('#entrant_form');
+// 		let specInput = document.createElement('input');
+// 		specInput.setAttribute('type', 'hidden');
+// 		specInput.setAttribute('id', 'specialization');
+// 		specInput.setAttribute('name', 'specializations_9');
+// 		specInput.setAttribute('value', 9);
+// 		modalForm.appendChild(specInput);
+// 	}else{
+// 		let specInput = getElement('#specialization');
+// 		specInput.setAttribute('name', 'specializations_9');
+// 		specInput.setAttribute('value', 9);
+// 	}	
+// }
 function onSubmit(event) {
 	event.preventDefault();
 	grecaptcha.ready(function() {
@@ -96,7 +96,7 @@ function onSubmit(event) {
 				let index = 0;
 				for(let el of formElement.elements) {
 					const attrName = el.getAttribute('name');
-					if (['first_name', 'last_name', 'email', 'phone'].includes(attrName)) {
+					if (['first_name', 'last_name', 'email', 'phone', 'organization', 'posada', 'city'].includes(attrName)) {
 						if (el.value) {
 							el.classList.remove('input-error');
 						} else {

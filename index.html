@@ -986,12 +986,23 @@
 	>
 		<div class="site-footer__container">
 			<ul id="menu-footer-social" class="site-footer__social-menu">
-				<li id="menu-item-84" class="twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-84"><a href="https://twitter.com/wpengine">Twitter</a></li>
+				<li id="menu-item-84" class="twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-84">
+					<a href="#" onclick="openWinTw()">
+						<img src="img/tw.png" alt="Twitter">
+					</a>
+				</li>
 
-				<li id="menu-item-85" class="linkedin menu-item menu-item-type-custom menu-item-object-custom menu-item-85"><a href="https://www.linkedin.com/company/wpengine">Linkedin</a></li>
-				<li id="menu-item-86" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86"><a href="https://www.youtube.com/channel/UCJeAEAxX69v24CUBZ0WBYSg">YouTube</a></li>
-				<li id="menu-item-87" class="icon--instagram menu-item menu-item-type-custom menu-item-object-custom menu-item-87"><a href="https://instagram.com/wpengine">Instagram</a></li>
-				<li id="menu-item-88" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88"><a href="/feed/">RSS</a></li>
+				<li id="menu-item-85" class="linkedin menu-item menu-item-type-custom menu-item-object-custom menu-item-85">
+					<a href="" onclick="openWinIn()">
+						<img src="img/in.png" alt="Linkedin">
+					</a>
+				</li>
+
+				<li id="menu-item-86" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86">
+					<a href="" onclick="openWin2()">
+						<img src="img/fb.png" alt="Facebook">
+					</a>
+				</li>
 			</ul>
 			
 			<div class="site-footer__legal">
@@ -1030,12 +1041,15 @@
         <input type="hidden" name="organization_id" value="1">
         <input type="text" name="first_name" placeholder="Ім’я*" required>
         <input type="text" name="last_name" placeholder="Прізвище*" required>
+        <input type="text" name="organization" placeholder="Найменування організації, яку представляєте*" required>
+        <input type="text" name="posada" placeholder="Посада*" required>
+        <input type="text" name="city" placeholder="Місто*" required>
         <input type="email" name="email" placeholder="E-mail*" required>
         <input type="text" name="phone" placeholder="Мобільний телефон*" required>
-        <div class="about-us-entrant">
+      <!--   <div class="about-us-entrant">
           <label for="about_us">Звідки отримали інформацію про нас?</label>
           <textarea name="about_us" id="about_us"></textarea>
-        </div>
+        </div> -->
         <input class="modal-submit-button" type="submit" value="Відправити">
       </form>
     </div>
@@ -1054,6 +1068,13 @@
   </div>
 </div>	
 <!---->
+
+
+<!-- sharing functions -->
+
+
+
+<!--  -->
 
 
 <!-- modal window -->
@@ -1085,6 +1106,28 @@
           prevEl: ".swiper-button-prev",
         },
       });
+
+
+
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+		// ==========================
+		function openWinTw() {
+		  myWinTw = open("https://twitter.com/share?url=https://profitday.info/",
+		  "displayWindow","width=520,height=480,left=450,top=170,status=no,toolbar=no,menubar=no");
+		}
+		//=========================================
+
+		function openWinIn() {
+		  myWinIn = open("https://www.linkedin.com/shareArticle?mini=true&url=https://profitday.info/&title=Prof IT Day&source=LinkedIn",
+		  "displayWindow","width=120,height=80,left=650,top=170,status=no,toolbar=no,menubar=no");
+		}
+
+		// ===================================================
+
+		function openWin2() {
+		myWin=open("http://www.facebook.com/sharer.php?u=https://profitday.info/","displayWindow","width=120,height=80,left=650,top=170,status=no,toolbar=no,menubar=no");
+		}
+		// ===================================================
     </script>
 
 </body>

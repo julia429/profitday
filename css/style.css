@@ -334,7 +334,7 @@ ul>li:before {
     max-width: 90vw;
     grid-template-rows: calc(73px + 43px) auto;
     grid-template-columns: 150px auto 150px;
-    border-top: 10px solid #2DC9D4;
+    border-top: 10px solid #f07c00;
 	place-items: start center;
 	margin: 100px 0;
 	cursor: auto;
@@ -347,7 +347,7 @@ ul>li:before {
 }
 
 .modal-header h1 {
-	font-family: UIDisplay;
+	/*font-family: UIDisplay;*/
 	font-style: normal;
 	font-weight: 500;
 	color: #045786;
@@ -357,25 +357,37 @@ ul>li:before {
     margin-top: 63px;
 }
 
+input {
+	height: 53px;
+}
+
 .modal-body {
 	grid-column: 2;
     grid-row: 2;
     margin-top: 53px;
+    width: 70%;
 }
 
 .modal-body form {
 	display: grid;
     grid-template-columns: auto;
     grid-row-gap: 20px;
-    grid-template-rows: repeat(4, 53px) 170px auto 61px;
+    /*grid-template-rows: repeat(4, 53px) 170px auto 61px;*/
 }
 
+.modal-header {
+	padding: 0px !important;
+}
+
+/*.site-footer__social-menu a:before {
+	display: none !important;
+}*/
+
 .modal-body form input[type='submit'] {
-	grid-row: 7;
-	background: linear-gradient(90deg, #47EEC2 0%, #25BED8 100%);
-	border-radius: 30px;
+	grid-row: 8;
+	background: #f07c00;
 	color: #fff;
-	font-family: Roboto;
+	/*font-family: Roboto;*/
 	font-style: normal;
 	font-weight: 500;
 	text-align: center;
@@ -383,7 +395,15 @@ ul>li:before {
 	cursor: pointer;
     place-self: center;
     font-size: 24px;
-    line-height: 28px;
+    width: 100%;
+    height: 58px;
+    margin-bottom: 40px;
+    border: 0;
+}
+
+input["type="submit"] {
+	border-radius: 0px;
+	border: 0 !important;
 }
 
 .modal-body input {
@@ -409,7 +429,7 @@ ul>li:before {
 }
 .education-entrant label,
 .about-us-entrant label{
-	font-family: Roboto;
+	/*font-family: Roboto;*/
 	font-style: normal;
 	font-weight: normal;
 	color: #045786;
@@ -469,7 +489,7 @@ ul>li:before {
 }
 
 .text-box {
-	font-family: Roboto;
+	/*font-family: Roboto;*/
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
@@ -497,6 +517,10 @@ ul>li:before {
     border-top: 6px solid #2DC9D4;
 }
 
+.site-footer__social-menu a:before {
+	display: none !important;
+}
+
 .entrants-response-modal .modal-header {
 	grid-column: 1/4;
 	grid-row: 1;
@@ -504,7 +528,7 @@ ul>li:before {
 }
 
 .entrants-response-modal .ankete-text {
-	font-family: UIDisplay;
+	/*font-family: UIDisplay;*/
 	font-style: normal;
 	font-weight: 500;
 	color: #045786;
@@ -523,7 +547,7 @@ ul>li:before {
 	background: linear-gradient(90deg, #47EEC2 0%, #25BED8 100%);
 	border-radius: 30px;
 	color: #fff;
-	font-family: Roboto;
+	/*font-family: Roboto;*/
 	font-style: normal;
 	font-weight: 500;
 	text-align: center;
@@ -545,6 +569,7 @@ ul>li:before {
 .entrants-response-modal .modal-body {
     margin-top: 0px;
 }
+
 
 /* ----diff-devices-width----- */
 @media only screen and (max-device-width: 440px){
