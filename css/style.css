@@ -5,6 +5,49 @@ body {
 	/*background-color: red;*/
 }
 
+.profitday {
+	text-align: center; 
+	margin-bottom: 20px; 
+	font-size: 65px;
+}
+
+.if {
+	text-align: center; 
+	margin-bottom: 20px; 
+}
+
+.city-main {
+	text-align: center; 
+	margin-bottom: 20px; 
+}
+
+.city,
+.date {
+	text-align: center;
+}
+
+video {
+	height: 80%; 
+	width: 90%; 
+	margin: 0 auto;
+}
+
+.section-top {
+	width: 100%; 
+	display: flex; 
+	align-items: center; 
+	flex-direction: column;
+}
+
+.left-column {
+	width: 100%; 
+	display: flex; 
+	align-items: center;
+}
+
+.main-txt {
+	font-size:16px;
+}
 .access-form .wpe_passwordless_auth_form .wpe_passwordless_auth_field .button, .button--sunset-white {
 	background-color: #f07c00;
 }
@@ -151,35 +194,174 @@ ul>li:before {
 	flex: 0 0 0 !important;
 }
 
-.site-header.mobile-nav-active .dropdown-nav.mobile:before {
+/*.site-header.mobile-nav-active .dropdown-nav.mobile:before {
 	background-color: #f07c00 !important;
-}
+}*/
 
-.nav__link--block .nav__title {
-	color: #002838;
-}
+	#indexed {
+		position: relative;
+		z-index: 10;
+	}
 
-.nav__link--block {
-	border-bottom: 1px solid #002838 !important;
-}
+	.nav__link--block .nav__title {
+		color: #002838;
+	}
 
+	.nav__link--block {
+		border-bottom: 1px solid #002838 !important;
+	}
+
+.swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+      	bottom: -5px !important;
+      }
+
+      #event {
+      	box-shadow: none !important;
+      }
+
+      .swiper {
+      	height: 300px !important;
+      }
+
+      .swiper-button-next, .swiper-rtl .swiper-button-prev,
+      .swiper-button-prev, .swiper-rtl .swiper-button-next {
+      	color: #002838 !important;
+      }
+
+      .swiper-pagination-bullet-active {
+      	background-color: #f07c00 !important;
+      }
+
+	#contacts {
+		background-color: #f4f7fa !important;
+	}
+
+	.section-top {
+		text-align: center;
+	}
+
+	.fl-builder-content-primary .fl-row:first-child .fl-row-content-wrap  {
+		padding-top: 150px;
+	}
+
+	#partners-line {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.program-mobile {
+		display: none !important;
+
+	}
+
+	.program-desktop {
+		display: block !important;
+	}
+
+	.site-footer__social-menu a:before {
+		display: none;
+	}
 
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
+
 	#wrap-columns {
-		flex-direction: column;
+		flex-direction: column !important;
 	}
 
 	.contacts-wrap {
+		flex-direction: column;
 		flex-direction: column;
 	}
 	#flexwrap {
 		flex-direction: column;
 	}
 
+	.mail, .phone {
+		font-size: 20px;
+	}
+
 	.width-30,
 	.fl-col {
 		width: 100% !important;
+	}
+
+	.button-group>.button {
+		min-width: 100px !important;
+	}
+	#myTab {
+		width: 100%;
+	}
+	.section-top {
+		text-align: center;
+	}
+
+	.site-footer__container {
+		justify-content: center;
+	}
+
+	.program-mobile {
+		display: block !important;
+	}
+
+	.program-desktop {
+		display: none !important;
+	}
+	#home-tab, 
+	#profile-tab, 
+	#contact-tab {
+		background: #fff;
+		width:90%;
+		margin: 0 auto;
+		display: block;
+		border-top: 7px solid #f07c00;
+		border-bottom: 0;
+		border-left: 0;
+		border-right: 0;
+		color: #002838;
+
+	}
+
+	.table {
+		width: 90%;
+		margin: 10px auto;
+		background: #fff;
+	}
+
+	.contacts-wrap {
+		flex-direction: column;
 	}
 }
 
