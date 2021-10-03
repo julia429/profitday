@@ -10,8 +10,8 @@ function listenEntrantBtn() {
 	elements.forEach(element => {
 		element.addEventListener('click', fireEntrantModalHacker);
 		});
-	const campBtn = getElement('#camp');
-	campBtn.addEventListener('click', fireEntrantModalCamp);
+	// const campBtn = getElement('#camp');
+	// campBtn.addEventListener('click', fireEntrantModalCamp);
 }
 
 function fireEntrantModalHacker(event) {
@@ -23,18 +23,18 @@ function fireEntrantModalHacker(event) {
 		element.style.display = 'grid';
 	}
 }
-function fireEntrantModalCamp(event) {
-	listenEntrantSubmit();
-	listentModalWrap();
-	addCamp();
-	const element = getElement('.entrants-modal-wrap');
-	if (getComputedStyle(element, null).display === 'none') {
-		element.style.display = 'grid';
-	}
-}
+// function fireEntrantModalCamp(event) {
+// 	listenEntrantSubmit();
+// 	listentModalWrap();
+// 	addCamp();
+// 	const element = getElement('.entrants-modal-wrap');
+// 	if (getComputedStyle(element, null).display === 'none') {
+// 		element.style.display = 'grid';
+// 	}
+// }
 function addHackers(){
 	const modalHeader = getElement('.modal-header-top-line');
-	modalHeader.innerHTML = "<h1>Анкета для Абітурієнта на навчання в Школі Хакерів</h1>";
+	modalHeader.innerHTML = "<h1>Реєстрація на Prof IT Day</h1>";
 	if(!(getElement('#specialization'))){
 		const modalForm = getElement('#entrant_form');
 		let specInput = document.createElement('input');
@@ -49,23 +49,23 @@ function addHackers(){
 		specInput.setAttribute('value', 8);
 	}
 }
-function addCamp(){
-	const modalHeader = getElement('.modal-header-top-line');
-	modalHeader.innerHTML = "<h1>Анкета в ІТ-табір</h1>";
-	if(!(getElement('#specialization'))){
-		const modalForm = getElement('#entrant_form');
-		let specInput = document.createElement('input');
-		specInput.setAttribute('type', 'hidden');
-		specInput.setAttribute('id', 'specialization');
-		specInput.setAttribute('name', 'specializations_9');
-		specInput.setAttribute('value', 9);
-		modalForm.appendChild(specInput);
-	}else{
-		let specInput = getElement('#specialization');
-		specInput.setAttribute('name', 'specializations_9');
-		specInput.setAttribute('value', 9);
-	}	
-}
+// function addCamp(){
+// 	const modalHeader = getElement('.modal-header-top-line');
+// 	modalHeader.innerHTML = "<h1>Анкета в ІТ-табір</h1>";
+// 	if(!(getElement('#specialization'))){
+// 		const modalForm = getElement('#entrant_form');
+// 		let specInput = document.createElement('input');
+// 		specInput.setAttribute('type', 'hidden');
+// 		specInput.setAttribute('id', 'specialization');
+// 		specInput.setAttribute('name', 'specializations_9');
+// 		specInput.setAttribute('value', 9);
+// 		modalForm.appendChild(specInput);
+// 	}else{
+// 		let specInput = getElement('#specialization');
+// 		specInput.setAttribute('name', 'specializations_9');
+// 		specInput.setAttribute('value', 9);
+// 	}	
+// }
 function onSubmit(event) {
 	event.preventDefault();
 	grecaptcha.ready(function() {
