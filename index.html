@@ -1041,6 +1041,39 @@
         <input type="hidden" name="organization_id" value="1">
         <input type="text" name="first_name" placeholder="Ім’я*" required>
         <input type="text" name="last_name" placeholder="Прізвище*" required>
+        <input type="email" name="email" placeholder="E-mail*" required>
+        <input type="text" name="phone" placeholder="Мобільний телефон*" required>
+        <div class="about-us-entrant">
+          <label for="about_us">Звідки отримали інформацію про нас?</label>
+          <textarea name="about_us" id="about_us"></textarea>
+        </div>
+        <input class="modal-submit-button" type="submit" value="Відправити">
+      </form>
+    </div>
+  </div>
+</div>
+<div class="entrants-response-modal-wrap" id="entrants_response">
+  <div class="entrants-response-modal">
+    <div class="modal-header">
+      <div class="modal-header-top-line"></div>
+      <h1 class="ankete-text">Ваша анкета успішно відправлена</h1>
+    </div>
+    <div class="modal-body">
+      <img src="images/entrant_agree_modal.svg" alt="ankete poster">
+      <div class="ok-btn">Зрозуміло</div>
+    </div>
+  </div>
+</div>	
+<!-- <div class="entrants-modal-wrap" id="entrants">
+  <div class="entrants-modal">
+    <div class="modal-header">
+      <div class="modal-header-top-line"></div>
+    </div>
+    <div class="modal-body">
+      <form id="entrant_form" name="entrant-form" method="post" accept-charset="utf-8">
+        <input type="hidden" name="organization_id" value="1">
+        <input type="text" name="first_name" placeholder="Ім’я*" required>
+        <input type="text" name="last_name" placeholder="Прізвище*" required>
         <input type="text" name="organization" placeholder="Найменування організації, яку представляєте*" required>
         <input type="text" name="posada" placeholder="Посада*" required>
         <input type="text" name="city" placeholder="Місто*" required>
@@ -1062,7 +1095,7 @@
       <div class="ok-btn">Зрозуміло</div>
     </div>
   </div>
-</div>	
+</div>	 -->
 <!---->
 
 
@@ -1074,7 +1107,6 @@
 
 
 <!-- modal window -->
-	<script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
 
 	<script data-minify="1" type='text/javascript' src='https://attend.wpengine.com/decode-2021/wp-content/cache/min/20/decode-2021/wp-content/themes/wpengine-breakthrough/js/main-034a9d9130f0b2a6bab416124177d2ec.js' id='wpengine-main-js' defer></script>
 
@@ -1084,6 +1116,7 @@
 
 <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
 
     <!-- Initialize Swiper -->
    <script>
