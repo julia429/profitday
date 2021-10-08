@@ -24,6 +24,7 @@ function fireEntrantModalHacker(event) {
 
 function addHackers(){
 	const modalHeader = getElement('.modal-header-top-line');
+	const currentCity = document.getElementById("currentCity");
 	modalHeader.innerHTML = "<h1>Реєстрація на Prof IT Day</h1>";
 	if(!(getElement('#specialization'))){
 		const modalForm = getElement('#entrant_form');
@@ -33,6 +34,11 @@ function addHackers(){
 		specInput.setAttribute('name', 'specializations_8');
 		specInput.setAttribute('value', 8);
 		modalForm.appendChild(specInput);
+		newValue = currentCity.innerHTML;
+		// specInput = this.value;
+		// specInput.value = this.currentCity.innerHTML;
+		console.dir(newValue);
+		// console.dir(currentCity.innerHTML);
 	}else{
 		let specInput = getElement('#specialization');
 		specInput.setAttribute('name', 'specializations_8');
