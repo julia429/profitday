@@ -34,6 +34,7 @@ function addHackers(){
 		specInput.setAttribute('name', 'specializations_8');
 		specInput.setAttribute('value', 8);
 		modalForm.appendChild(specInput);
+		console.log(specInput.value);
 		// newValue = currentCity.innerHTML;
 		// specInput = this.value;
 		// specInput.value = this.currentCity.innerHTML;
@@ -76,7 +77,7 @@ function onSubmit(event) {
 				let index = 0;
 				for(let el of formElement.elements) {
 					const attrName = el.getAttribute('name');
-					if (['first_name', 'last_name', 'email', 'phone', 'city', 'organization', 'posada' ].includes(attrName)) {
+					if (['first_name', 'last_name', 'email', 'phone', 'city'].includes(attrName)) {
 						if (el.value) {
 							el.classList.remove('input-error');
 						} else {
