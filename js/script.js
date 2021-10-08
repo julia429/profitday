@@ -32,9 +32,9 @@ function addHackers(){
 		specInput.setAttribute('type', 'hidden');
 		specInput.setAttribute('id', 'specialization');
 		specInput.setAttribute('name', 'specializations_8');
-		specInput.setAttribute('value', 8);
+		specInput.setAttribute('value', currentCity.innerHTML);
 		modalForm.appendChild(specInput);
-		specInput.value = currentCity.innerHTML;
+		// specInput.value = currentCity.innerHTML;
 		console.log(specInput.value);
 		// newValue = currentCity.innerHTML;
 		// specInput = this.value;
